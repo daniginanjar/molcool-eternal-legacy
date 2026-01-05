@@ -1,0 +1,67 @@
+{
+    "album_title": "DANIMONIUS (demo)",
+    "artist": "DANIMONIUS",
+    "year": "2026",
+    "genre": "Rock Alternative / Grunge / Nu Metal",
+    "label": "Indie / TENGKORAKGARUT Record",
+    "copyright": "© 2026 DANIMONIUS",
+    "description": "It's about Rage, Warning, and Survival while living in a rot country",
+    "artwork": "assets/artwork/danimonius-demo-artwork.jpg",
+    "social_links": {
+        "instagram": "https://instagram.com/danimonius",
+        "youtube": "https://youtube.com/@danimoniustv",
+        "spotify": "https://open.spotify.com/artist/4iUTd1oYRU61uNtQs2WdsF?si=Mrf1dwt0Qg2vrzqFi6JYdw"
+    },
+    "tracks": [
+        {
+            "title": "MR. WICK",
+            "duration": "5:25",
+            "file": "assets/music/MRWICK.mp3"
+        },
+        {
+            "title": "KRAKEN",
+            "duration": "3:49",
+            "file": "assets/music/KRAKEN.mp3"
+        },
+        {
+            "title": "PSYWAR",
+            "duration": "3:44",
+            "file": "assets/music/PSYWAR.mp3"
+        },
+        {
+            "title": "BUMI MENANGIS",
+            "duration": "4:41",
+            "file": "assets/music/BUMIMENANGIS.mp3"
+        },
+        {
+            "title": "ALIANSI KONYOL",
+            "duration": "4:03",
+            "file": "assets/music/ALIANSIKONYOL.mp3"
+        },
+        {
+            "title": "VICTIM",
+            "duration": "4:41",
+            "file": "assets/music/VICTIM.mp3"
+        },
+        {
+            "title": "PROGRES NOL BESAR",
+            "duration": "4:03",
+            "file": "assets/music/PROGRESNOLBESAR.mp3"
+        },
+        {
+            "title": "SPACE SHIP",
+            "duration": "4:08",
+            "file": "assets/music/SPACETRIP.mp3"
+        },
+        {
+            "title": "INILAH HIDUP",
+            "duration": "4:05",
+            "file": "assets/music/INILAHHIDUP.mp3"
+        },
+        {
+            "title": "INTERNET ERA",
+            "duration": "3:45",
+            "file": "assets/music/INTERNETERA.mp3"
+        }
+    ]
+}

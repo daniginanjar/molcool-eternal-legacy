@@ -1,0 +1,224 @@
+body {
+    background: #f2f2f2;
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        "Helvetica Neue",
+        Arial,
+        sans-serif;
+}
+
+.itunes-container {
+    width: 900px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.album-header {
+    display: flex;
+    gap: 20px;
+}
+
+.album-art {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.album-info h1 {
+    margin: 0;
+}
+
+.tracklist {
+    margin-top: 30px;
+}
+
+/* === TRACK ROW === */
+.track {
+    display: grid;
+    grid-template-columns: 40px 1fr 70px 120px;
+    align-items: center;
+    padding: 10px 8px;
+    border-bottom: 1px solid #ddd;
+    transition: background 0.3s ease;
+}
+
+.track:hover {
+    background: #f9f9f9;
+}
+
+.track.playing {
+    background: #f0f7ff;
+}
+
+.track-number {
+    color: #888;
+    font-size: 13px;
+}
+
+.track-title {
+    font-weight: 500;
+}
+
+.track.playing .track-title {
+    font-weight: 600;
+}
+
+.track-duration {
+    text-align: right;
+    font-size: 13px;
+    color: #666;
+}
+
+/* === PLAYER AREA === */
+.track-player {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: flex-end;
+}
+
+/* === PLAY BUTTON === */
+.play-btn {
+    background: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    color: #007aff;
+}
+
+.play-btn:hover {
+    opacity: 0.7;
+}
+
+/* === EQUALIZER === */
+.equalizer {
+    display: none;
+    width: 20px;
+    height: 14px;
+    align-items: flex-end;
+    gap: 2px;
+}
+
+.track.playing .equalizer {
+    display: flex;
+}
+
+
+.equalizer span {
+    width: 4px;
+    background: #007aff;
+    animation: equalize 0.8s infinite ease-in-out;
+}
+
+.equalizer span:nth-child(2) {
+    animation-delay: -0.4s;
+}
+
+.equalizer span:nth-child(3) {
+    animation-delay: -0.2s;
+}
+
+@keyframes equalize {
+    0% { height: 3px; }
+    50% { height: 14px; }
+    100% { height: 3px; }
+}
+
+/* === SOCIAL LINKS === */
+.artist-social {
+    margin-top: 12px;
+    display: flex;
+    gap: 10px;
+}
+
+.social-link {
+    font-size: 12px;
+    padding: 6px 10px;
+    border-radius: 999px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    color: #333;
+    transition: all 0.2s ease;
+}
+
+.social-link:hover {
+    background: #f2f2f2;
+}
+
+/* Brand accent (subtle) */
+.social-link.ig {
+    border-color: #e0e0e0;
+}
+
+.social-link.yt {
+    border-color: #e0e0e0;
+}
+
+@media (max-width: 768px) {
+
+    .itunes-container {
+        width: auto;
+        margin: 20px;
+        padding: 20px;
+    }
+
+    /* Album header jadi vertical */
+    .album-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .album-art {
+        width: 70%;
+        max-width: 280px;
+    }
+
+    .album-info {
+        margin-top: 15px;
+    }
+
+    .artist-social {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    /* Track list reflow */
+    .track {
+        grid-template-columns: 1fr auto;
+        grid-template-areas:
+            "title player"
+            "meta meta";
+        row-gap: 6px;
+    }
+
+    .track-number {
+        display: none;
+    }
+
+    .track-title {
+        grid-area: title;
+        font-size: 15px;
+    }
+
+    .track-player {
+        grid-area: player;
+    }
+
+    .track-duration {
+        grid-area: meta;
+        text-align: left;
+        font-size: 12px;
+        color: #888;
+    }
+}
+
+@media (max-width: 768px) {
+    .play-btn {
+        font-size: 18px;
+    }
+}
